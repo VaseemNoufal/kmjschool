@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./About";
 import Navbar from "../Components/Navbar";
+import CurvedLoop from "../Components/CurvedLoop";
 //Importing Images
 import kmjimage from '../assets/Images/kmjimage.jpg'
 import facebookicon from '../assets/Images/facebook.svg'
@@ -39,6 +40,17 @@ export default function Home(){
             </div>
         </section>
         <About />
+        <section className="h-[37vh] w-full overflow-hidden bg-white">
+            <CurvedLoop 
+                marqueeText="Admission Open ✦ For 2026-27 ✦"
+                speed={3}
+                curveAmount={300}
+                direction="right"
+                interactive={true}
+                className="custom-text-style"
+            />
+
+        </section>
         </>
     )
 }
