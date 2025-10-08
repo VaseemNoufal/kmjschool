@@ -44,7 +44,7 @@ export default function Home(){
             <CurvedLoop 
                 marqueeText="Admission Open ✦ For 2026-27 ✦"
                 speed={3}
-                curveAmount={300}
+                curveAmount={130}
                 direction="right"
                 interactive={true}
                 className="custom-text-style"

@@ -2,6 +2,7 @@ import React from "react";
 
 export default function About(){
     return(
+        <>
         <div className="h-[90vh] w-full flex justify-center items-center bg-white -z-11">
             <div className="w-[70%] h-[100%] py-20">
                 <div className="text-center flex flex-col items-center justify-center mb-6">
@@ -14,5 +15,6 @@ export default function About(){
                 </div>
             </div>
         </div>
+        </>
     )
 }
