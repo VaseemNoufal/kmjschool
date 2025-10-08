@@ -1,7 +1,10 @@
 import React from "react";
 import About from "./About";
 import Navbar from "../Components/Navbar";
+//Importing Images
 import kmjimage from '../assets/Images/kmjimage.jpg'
+import facebookicon from '../assets/Images/facebook.svg'
+import instagramicon from "../assets/Images/instagram.svg"
 
 export default function Home(){
     return(
@@ -19,8 +22,20 @@ export default function Home(){
             </div>
             <div className="w-[55%] mx-auto pt-12 text-center text-white font-montserrat-bold">
                 <h3 className="mb-4">"NOT ME BUT YOU"</h3>
-                <h1 className="w-[80%] text-6xl/15 mx-auto scale-y-107 mb-9">"Service Beyond Self Empowering Communities"</h1>
+                <h1 className="w-[99%] text-6xl/15 mx-auto scale-y-107 mb-9">"Service Beyond Self Empowering Communities"</h1>
                 <a href="/" className="border-2 border-white text-white px-5 py-2 hover:bg-white hover:text-black transition-all duration-300">Learn More</a>
+            </div>
+            <div className="absolute left-9 bottom-11 flex flex-col items-center justify-center">
+                <div className="block w-[1px] h-[50px] bg-white mb-3"></div>
+                <a href="">
+                    <img src={facebookicon} alt="Facebook-icon" width={20} className="filter brigtness-0 invert mb-3"/>
+                </a>
+                <a href="">
+                    <img src={instagramicon} alt="Facebook-icon" width={20} className="filter brigtness-0 invert"/>
+                </a>
+            </div>
+            <div className="absolute right-9 bottom-7 animate-[bounceBottom_2s_ease-in-out_infinite]">
+                <h1 className="text-white font-montserrat-bold tracking-[0.25em] text-xs rotate-90 origin-right">SCROLL DOWN →</h1>
             </div>
         </section>
         <About />

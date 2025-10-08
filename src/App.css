@@ -38,3 +38,9 @@ html, body, #root {
   --font-montserrat-medium: "MontserratMedium", sans-serif;
   --font-montserrat-bold: "MontserratBold", sans-serif;
 }
+
+
+@keyframes bounceBottom {
+  0%, 100% { bottom: 0.8rem; }   /* bottom-4 */
+  50% { bottom: 1.75rem; }     /* bottom-7 */
+}
